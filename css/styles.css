@@ -52,13 +52,16 @@ img.logo {
 .list {
   display: flex;
   justify-content: space-between;
-  list-style: none;
+  list-style-type: none;
 }
 
 .link {
   padding: 10px;
   font-size: 14px;
   font-weight: bold;
+  color: var(--white);
+  text-decoration: none;
+  font-family: lineto-black;
 }
 .link:hover {
   color: var(--lime-green);
@@ -171,35 +174,41 @@ strong.bold-height {
 }
 
 /* F O O T E R */
-.footer-container {
-  background-color: var(--black);
+.footer {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+  padding: 15px;
+  background-color: var(--black);
   font-family: lineto-pro-book;
+  font-size: 10px;
+  color: #999;
 }
 
-.menu {
-  margin: 50px 0px 50px 15px;
-}
-
-.menu-links {
-  display: flex;
-  flex-wrap: wrap;
+.menu-items {
+  display: inline-block;
 }
 
 .footer-links {
-  text-decoration: none;
+  display: inline-block;
+  padding: 7px;
+}
+.footer-links:hover {
   color: var(--white);
+}
+
+.footer-links {
+  display: inline-block;
+  text-decoration: none;
+  color: #999;
   margin-right: 15px;
   line-height: 2;
 }
 
 .copyright-content {
-  line-height: 2;
-  margin: 20px 15px 0 0;
-  color: var(--white);
+  display: flex;
+  flex-direction: column;
   text-align: right;
-  min-width: 100px;
 }
 
 .spain-flag {
@@ -207,3 +216,41 @@ strong.bold-height {
   height: 20px;
   padding-top: 10px;
 }
+
+.copy-year {
+  margin-top: 5px;
+}
+
+@media all and (min-width: 768px) {
+  /* HEADER */
+  .blue-container {
+    background-image: url(../img/premium_dancer.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+  }
+  /* HERO */
+  .blue-container-text-1 {
+    margin-top: 100px;
+  }
+
+  .white-container-content {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 700px;
+  }
+
+  .icons {
+    width: 50%;
+  }
+}
+/* revisar desde el conenedor azul */
