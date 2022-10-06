@@ -224,7 +224,7 @@ strong.bold-height {
 @media all and (min-width: 768px) {
   /* HEADER */
   .blue-container {
-    background-image: url(../img/premium_dancer.png);
+    background-image: url("../images/premium_dancer.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: right;
@@ -238,19 +238,41 @@ strong.bold-height {
     display: block;
   }
   /* HERO */
+  .blue-container-content {
+    align-items: flex-start;
+    margin-top: 60px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+
   .blue-container-text-1 {
-    margin-top: 100px;
+    font-size: 60px;
+  }
+  strong.bold-height {
+    font-size: 55px;
+  }
+
+  .blue-container-text-3 {
+    width: 70%;
   }
 
   .white-container-content {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 700px;
+    max-width: 1000px;
   }
-
+  .white-container-text {
+    font-size: 40px;
+  }
   .icons {
-    width: 50%;
+    width: 40%;
+  }
+  .text-icons {
+    font-size: 1.25rem;
+    padding-bottom: 10px;
   }
 }
-/* revisar desde el conenedor azul */
+
+@media all and (min-width: 1000px) {
+}
